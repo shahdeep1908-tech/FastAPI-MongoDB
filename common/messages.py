@@ -1,0 +1,70 @@
+"""
+This module contains all the messages used in the project.
+"""
+
+# Authentication Routes Messages
+ERR_PASSWORD_WRONG = "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters."
+ERR_MSG_ALREADY_EXIST = "A user with this email already exists in the system."
+ERR_ORG_ALREADY_EXIST = "An organization with this name already exists in the system."
+REGISTER_SUCCESS_MESSAGE = "User registered successfully. "
+ERR_EMAIL_INCORRECT = "The email entered is incorrect."
+ERR_PASSWORD_INCORRECT = "The password entered is incorrect."
+ERR_INCORRECT_CREDENTIALS = "The credentials entered is incorrect."
+LOGIN_SUCCESS_MESSAGE = "User logged in successfully."
+CREATE_NEW_TOKEN_SUCCESS_MESSAGE = "New token created successfully."
+PASSWORD_RESET_MAIL_MSG = "Password reset link has been sent to your email."
+PASSWORD_CHANGE_MSG = "Password successfully changed."
+EMAIL_VERIFIED_MSG = "OTP Verified Successfully."
+ERR_OlD_PASSWORD_INCORRECT = "The old password entered is incorrect."
+ERR_OLD_PASSWORD_MATCH = "The new password should not be the same as the old password."
+PROFILE_CHANGE_MSG = "Your profile has been successfully updated."
+GET_USER_PROFILE_MSG = "User data fetched successfully."
+REGISTRATION_MSG = "You have been successfully registered."
+USER_NOT_FOUND_MSG = "User not found."
+OTP_VERIFICATION_MSG = "OTP Verification."
+INVALID_OTP_MSG = "Invalid OTP."
+OTP_EXPIRED_MSG = "Your OTP has expired. Please resend your request."
+RE_VERIFICATION_SUCCESS_MESSAGE = "Verify email link has been sent to your email."
+TOKEN_BLACKLIST_MSG: str = "The token has been successfully blacklisted."
+ERR_TOKEN_BLACKLISTED = "This token has been expired."
+
+# Roles Routes Messages
+ROLES_SUCCESS = "Roles {} successfully."
+ROLE_NOT_FOUND = "Role not found."
+
+# Permissions Routes Messages
+PERMISSION_SUCCESS = "Permission {} successfully."
+PERMISSION_NOT_FOUND = "Permission not found."
+INVALID_PERMISSION = "The provided permission is invalid. Please check the permission and try again."
+
+# Workspace Routes Messages
+WORKSPACE_SUCCESS_MESSAGE = "Workspace {} successfully."
+WORKSPACE_NOT_FOUND = "Workspace not found."
+WORKSPACE_USER_UNAUTHORIZED = "User is Unauthorized."
+WORKSPACE_INVITATION_MAIL_MSG = "Invitation link has been sent to member's email."
+VERIFY_INVITATION_MAIL_MSG = "User verified successfully."
+WORKSPACE_INVITATION_ALREADY_ACCEPTED = "Invitation already accepted."
+WORKSPACE_MEMBERS_SUCCESS = "Workspace members fetched successfully."
+WORKSPACE_REMOVE_MEMBER = "Workspace member removed successfully."
+WORKSPACE_MEMBERS_NOT_FOUND = "Workspace member not found."
+WORKSPACE_LAST_MEMBER_ERROR_MSG = "Cannot remove the last member of the workspace. A workspace must have at least one member."
+USER_WORKSPACE_NOT_FOUND = "User does not belong to this workspace."
+USER_ALREADY_EXISTS = "User already exists in this workspace."
+
+# Page Routes Messages
+PAGE_SUCCESS_MESSAGE = "Page {} successfully."
+PAGE_NOT_FOUND = "Page not found."
+PARENT_PAGE_NOT_FOUND = "Parent-Page does not exists."
+PAGE_FAILURE_MESSAGE = "Error occurred while creating page."
+PAGE_DATA_NOT_FOUND = "Data not found."
+PAGE_TITLE_CHANGED = "Page title changed successfully."
+
+# Workspace List Messages
+LIST_SUCCESS_MESSAGE = "Workspace list {} successfully."
+LIST_NOT_FOUND = "Workspace list not found."
+LIST_DATA_NOT_FOUND = "Workspace list data not found."
+LIST_TITLE_CHANGED = "Workspace list title changed successfully."
+PARENT_LIST_NOT_FOUND = "Parent workspace list does not exists."
+PARENT_ID_ERROR = "Invalid parent ID, it would create a cicular reference."
+LIST_CONTENT_SUCCESS_MESSAGE = "Workspace list content {} successfully."
+CONTENT_DETAILS_NOT_FOUND = "Content details not found."
